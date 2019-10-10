@@ -13,6 +13,7 @@ export class InsertdataComponent implements OnInit {
   location:any=""
   jsonstring:any="";
   response: any="";
+
   ip = "http://localhost:8081/inkup/"
   getDataUrl =  this.ip + 'getData';
   getDataAllUrl = this.ip + 'getDataAll';
@@ -29,11 +30,12 @@ export class InsertdataComponent implements OnInit {
       'name': this.name,
       'location': this.location};
 
-     this.http.post(this.insertDataUrl, this.jsonstring,
+    console.log(this.jsonstring);
+     this.http.put(this.insertDataUrl, this.jsonstring,
       {headers : {'Content-Type' : 'application/json'}}).subscribe(
         data => {
           this.response = data;
-          console.log(this.jsonstring);
+          console.log(this.response);
         },
         error =>{
           console.log("error");
