@@ -14,7 +14,7 @@ export class InsertdataComponent implements OnInit {
   jsonstring:any="";
   response: any="";
 
-  ip = "http://localhost:8081/inkup/"
+  ip = "http://ink-up-api.herokuapp.com/inkup/"
   getDataUrl =  this.ip + 'getData';
   getDataAllUrl = this.ip + 'getDataAll';
   insertDataUrl = this.ip + 'insertData';
