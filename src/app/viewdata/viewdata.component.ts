@@ -21,6 +21,7 @@ export class ViewdataComponent {
   
   constructor(private http:HttpClient) { }
   ngOnInit() {
+    console.log("Hi")
        this.http.get(this.getDataAllUrl ,{
         headers: {        'Content-Type':'application/json'}
       }).subscribe(
