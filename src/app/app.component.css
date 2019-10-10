@@ -1,0 +1,10 @@
+.topbar {
+  /* border: 1px solid black; */
+  background-color: #C4E1FF
+
+}
+th, td {
+  border-collapse: collapse;
+  font-family: Sans-serif;
+  padding: 15px;
+}
